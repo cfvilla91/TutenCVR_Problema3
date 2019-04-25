@@ -1,0 +1,10 @@
+.example-header-image {
+  background-image: url(/assets/img/opeth.png);
+  background-size: cover;
+}
+
+.login-card {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.8);
+  margin-top: 50px;
+}

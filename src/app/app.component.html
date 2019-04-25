@@ -1,0 +1,12 @@
+<app-loader></app-loader>
+<ng-container *ngIf="isAuthorized(); else notAuthorized">
+  <app-layout>
+    <app-side-nav [appitems]="MENU_ITEMS"></app-side-nav>
+    <router-outlet></router-outlet>
+  </app-layout>
+</ng-container>
+<ng-template #notAuthorized>
+  <div [@fadeAnimation]="'in'" fxFill fxLayout="row" fxLayoutAlign="center center" [ngStyle]="styleLogin()">
+    <router-outlet></router-outlet>
+  </div>
+</ng-template>
